@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 void setup()
 {
   // put your setup code here, to run once:
@@ -41,4 +43,15 @@ void loop()
   }
 
   delay(1000);
+}
+
+int main()
+{
+  init(); // Initializes the Arduino hardware.
+  setup();
+  while (true)
+  {
+    loop();
+  }
+  return 0;
 }
